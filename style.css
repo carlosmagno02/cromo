@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,main,section{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cabecalho */
+header{
+    height: 100px;
+    background-color: gray;
+}
+
+.navbar{
+    height: 100%;
+    max-width:1200px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown{
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu{
+    display: none;
+    list-style: none;
+}
+
+.dropdown-menu li{
+    display: block;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/*Fim Cabecalho */
+
+
+
+/* Projeto */
+.projeto{
+    background-image: url(img/IMG_1474.JPG);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.projeto > .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-projeto img{
+    width: 600px;
+    height: 300px;
+}
+
+.texto-projeto{
+    width:40%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.texto-projeto h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.texto-projeto p{
+    padding-top: 20px;
+}
+
+/* Fim projeto */
+
+/* Sobre */
+
+#cromo{
+    background-image: url(img/Grupo\ Editada.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.cromo{
+    position: absolute;
+    width: 70%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cromo h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.cromo p{
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+}
+
+@media screen and (max-width:700px){
+    .navbar{
+        height: 100%;
+        max-width:300px;
+        padding: 0 2%;
+    }
+    .projeto > .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .img-projeto img{
+        width: 300px;
+        height: 150px;
+    }
+
+    .texto-projeto{
+        width:80%;
+        font-size: 15px;
+    }
+
+    .texto-projeto h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+    }
+    
+    .texto-projeto p{
+        font-size: 13px;
+    }
+
+    .cromo{
+        width: 90%;
+    }
+
+    .cromo h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .cromo p{
+        font-size: 15px;
+        padding: 0;
+    }
+}
