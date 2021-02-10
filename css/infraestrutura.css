@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+    background-color: #3097C9;;
+}
+
+section{
+    height: 100%;
+}
+
+
+
+.infraestrutura{
+    background-image: url(../img/Infraestrutura\ Senai.png);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.infraestrutura h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-size: 96px;
+}
+
+.carrosel{
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    height:100%;
+}
+.container img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    max-width: 828px;
+    transform: translate(-50%,-50%);
+    width:100%;
+    opacity: 0;
+    transition:1s;
+}
+
+.bullets{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.bullet-single{
+    margin:0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border-radius:10px;
+    background-color: #FFFFFF;
+}
+
+.active-bullet{
+    background-color:#513F88
+    ;
+}
+
+.galeria-img{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.galeria-img img{
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 386px;
+    height: 300px;
+}
+@media screen and (max-width:700px){
+    .infraestrutura h1{
+        font-size: 36px;
+    }
+
+    .infra-imgs div{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .infra-imgs img{
+        width: 300px;
+        height: 250px;
+    }
+.container{
+    height:80%
+}
+
+    .container img{
+        height:50%;
+    }
+}

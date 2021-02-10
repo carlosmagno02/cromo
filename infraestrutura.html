@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infraestrutura</title>
+    <link rel="stylesheet" href="css/infraestrutura.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-galeria">
+                <p class="dropdown">Galeria</p>
+                <ul class="dropdown-menu">
+                    <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                    <li><a href="funcionario.html">Funcionarios</a></li>
+                    <li><a href="">Cursos</a></li>
+                </ul>
+            </div>
+            <div class="logotipo">
+               <a href="index.html"><img src="./img/logo-maneira.png" alt="logotipo chromo"></a>
+            </div>
+            <div class="menu-sobre">
+                <p class="dropdown">Sobre</p>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="index.html#projeto">Projeto</a>
+                        <a href="index.html#cromo">A Cromo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="infraestrutura">
+        <div>
+            <h1>Infraestrutura</h1>
+        </div>
+    </section>
+    <section clas="infra-carossel">
+        <div class="carrosel">
+            <div class="container">
+                <img style="opacity:1;" src="img/IMG_1136.JPG" />
+                <img src="img/IMG_1197.JPG" />
+                <img src="img/IMG_1837.JPG" />
+            </div>
+            <div class="bullets">
+                <div class="bullet-single active-bullet"></div>
+                <div class="bullet-single"></div>
+                <div class="bullet-single"></div>
+            </div>
+        </div>
+    </section>
+    <section class="galeria">
+        <div class="galeria-img">
+            <div class="img-pequena">            
+            <img src="img/IMG_1136.JPG" alt="">
+            <img src="img/IMG_1197.JPG" alt="">
+            <img src="img/IMG_1837.JPG" alt="">
+            <img src="img/IMG_1471.JPG" alt="">
+            <img src="img/IMG_1763.JPG" alt="">
+            <img src="img/IMG_1135.JPG" alt="">
+        </div>
+        </div>
+    </section>
+</body>
+<script>
+    var lastIndex = 0;
+
+    var images = document.querySelectorAll('.container img');
+
+    images.forEach((item,index)=>{
+        document.querySelectorAll('.bullet-single')[index]
+        .addEventListener('click',()=>{
+            let lastImage = document.querySelectorAll('.container img')[lastIndex];
+            let actualImage = document.querySelectorAll('.container img')[index];
+            
+            //Resetar as bullets e setar a nova com base na imagem.
+
+            document.querySelectorAll('.bullet-single')[lastIndex]
+            .classList.remove('active-bullet');
+            
+            ;
+            document.querySelectorAll('.bullet-single')[index]
+            .classList.add('active-bullet');
+
+            lastImage.style.opacity = 0;
+            actualImage.style.opacity = 1;
+
+            lastIndex = index;
+            
+        })
+    })
+
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+</html>

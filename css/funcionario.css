@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,section{
+    height: 100%;
+}
+
+#title{
+    background-image: url(../img/Funcionario\ Senai.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    font-family: Montserrat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.galeria{
+    background: #EA455B;
+}
+
+.galeria-img{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.galeria-img img{
+    margin-top: 15px;
+    margin-right: 5px;
+    width: 386px;
+    height: 300px;
+}
+
+.img-grande{
+    margin-right:0;
+    height: 617px!important;
+}

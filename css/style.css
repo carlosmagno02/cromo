@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,main,section{
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cabecalho */
+header{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar{
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+    max-width:500px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown{
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu{
+    display: none;
+    list-style: none;
+}
+
+.dropdown-menu li{
+    display: block;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/*Fim Cabecalho */
+
+
+
+/* Projeto */
+.inicio{
+    background-image: url(../img/Introdução\ Site.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio img{
+    width: 641px;
+    height: 198px;
+}
+
+#pagina{
+    background-image: url(../img/Infraestrutura\ Senai.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.pagina{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 96px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.pagina a{
+    color: white;
+    text-decoration: none;
+}
+
+.projeto{
+    background-image: url(../img/Projeto\ Senai.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.projeto > .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-projeto img{
+    width: 600px;
+    height: 300px;
+}
+
+.texto-projeto{
+    width:40%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.texto-projeto h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.texto-projeto p{
+    padding-top: 20px;
+}
+
+/* Fim projeto */
+
+/* Sobre */
+
+#cromo{
+    background-image: url(../img/Grupo\ Cromo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    color: white;
+}
+
+.cromo{
+    position: absolute;
+    width: 70%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cromo h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+.cromo p{
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+}
+
+@media screen and (max-width:700px){
+    .inicio img{
+        width: 270px;
+        height: 98px;
+    }
+    
+    .pagina h2{
+        font-size: 36px;
+    }
+
+    .navbar{
+        height: 100%;
+        max-width:300px;
+        padding: 0 2%;
+    }
+    .projeto > .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .img-projeto img{
+        width: 300px;
+        height: 150px;
+    }
+
+    .texto-projeto{
+        width:80%;
+        font-size: 15px;
+    }
+
+    .texto-projeto h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 48px;
+    }
+    
+    .texto-projeto p{
+        font-size: 13px;
+    }
+
+    .cromo{
+        width: 90%;
+    }
+
+    .cromo h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .cromo p{
+        font-size: 15px;
+        padding: 0;
+    }
+}
