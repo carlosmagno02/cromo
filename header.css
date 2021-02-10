@@ -1,0 +1,36 @@
+header{
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar{
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+    max-width:500px ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown{
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu{
+    display: none;
+    list-style: none;
+}
+
+.dropdown-menu li{
+    display: block;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}

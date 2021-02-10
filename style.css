@@ -17,12 +17,15 @@ html,body,main,section{
 /* Cabecalho */
 header{
     height: 100px;
-    background-color: gray;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
 }
 
 .navbar{
+    font-family: 'Comfortaa', cursive;
     height: 100%;
-    max-width:1200px ;
+    max-width:500px ;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -54,6 +57,38 @@ header{
 
 
 /* Projeto */
+.inicio{
+    background: linear-gradient(69.73deg, #513F88 0%, #EA455B 100%);    height: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio img{
+    width: 641px;
+    height: 198px;
+}
+
+.pagina{
+    background: linear-gradient(69.73deg, #513F88 0%, #EA455B 100%);    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagina h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 96px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.pagina a{
+    color: white;
+    text-decoration: none;
+}
+
 .projeto{
     background-image: url(img/IMG_1474.JPG);
     background-position: center;
@@ -96,6 +131,8 @@ header{
     background-image: url(img/Grupo\ Editada.png);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
     color: white;
 }
 
@@ -119,6 +156,15 @@ header{
 }
 
 @media screen and (max-width:700px){
+    .inicio img{
+        width: 270px;
+        height: 98px;
+    }
+    
+    .pagina h2{
+        font-size: 36px;
+    }
+
     .navbar{
         height: 100%;
         max-width:300px;
