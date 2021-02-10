@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html,body,main,section{
+html,body,section{
     height: 100%;
 }
 
@@ -125,6 +125,7 @@ header{
 }
 
 .texto-projeto{
+    margin-top: 50px;
     width:55%;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -169,6 +170,20 @@ header{
     padding-top: 20px;
     font-family: 'Comfortaa', cursive;
     font-size: 24px;
+}
+
+/* footer */
+footer{
+    height: 50px;
+    background: white;
+}
+footer p{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
 }
 
 @media screen and (max-width:700px){
