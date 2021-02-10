@@ -14,6 +14,12 @@ html,body,main,section{
     margin: auto;
 }
 
+.divisao{
+    width: 100%;
+    height: 15px;
+    background: white;
+}
+
 /* Cabecalho */
 header{
     height: 100px;
@@ -114,12 +120,12 @@ header{
 }
 
 .img-projeto img{
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
 }
 
 .texto-projeto{
-    width:40%;
+    width:55%;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
 }
