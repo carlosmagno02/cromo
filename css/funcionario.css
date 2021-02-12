@@ -88,7 +88,7 @@ h1{
 }
 
 footer{
-    height: 50px;
+    height: 30px;
     background: white;
 }
 footer p{
@@ -97,7 +97,7 @@ footer p{
     align-items: center;
     justify-content: center;
     font-family: 'Comfortaa', cursive;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 @media screen and (max-width:700px){
