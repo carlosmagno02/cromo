@@ -7,7 +7,7 @@
     <title>CROMO</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -19,7 +19,7 @@
                 <ul class="dropdowns-menu">
                     <li><a href="infraestrutura.html">Infraestrutura</a></li>
                     <li><a href="funcionario.html">Funcionarios</a></li>
-                    <li><a href="">Cursos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
                 </ul>
             </div>
             <div class="logotipo">
@@ -40,7 +40,7 @@
         <img src="img/logo cromo.png" alt="">
     </section>
     <div class="divisao"></div>
-    <section style="width: 100%;" class="guia-paginas" >
+    <section style="width: 100%;" class="guia-paginas">
         <div style="width: 100%;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -61,7 +61,7 @@
                     <div style="width: 100%;" class="banner segundo-banner">
                         <div style="width: 100%;" class="container-grid conteudo-banner">
                             <div style="width: 100%;" class="texto-banner">
-                                <a href="Funcionarios">Funcionarios</a>
+                                <a href="funcionario.html">Funcionarios</a>
                             </div>
                         </div>
                     </div>
@@ -70,20 +70,12 @@
                     <div style="width: 100%;" class="banner terceiro-banner">
                         <div style="width: 100%;" class="container-grid conteudo-banner">
                             <div style="width: 100%;" class="texto-banner">
-                                <a href="Curso">Cursos</a>
+                                <a href="cursos.html">Cursos</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </section>
     <div class="divisao"></div>
@@ -122,44 +114,16 @@
         <p>TODOS OS DIREITOS RESERVADOS © CROMO 2021</p>
     </footer>
 </body>
-<script>
-     var lastIndex = 0;
-
-var images = document.querySelectorAll('.todas-paginas .paginas');
-
-images.forEach((item,index)=>{
-    document.querySelectorAll('.bullet-single')[index]
-    .addEventListener('click',()=>{
-        let lastImage = document.querySelectorAll('.todas-paginas .paginas')[lastIndex];
-        let actualImage = document.querySelectorAll('.todas-paginas .paginas')[index];
-        
-        //Resetar as bullets e setar a nova com base na imagem.
-
-        document.querySelectorAll('.bullet-single')[lastIndex]
-        .classList.remove('active-bullet');
-        
-        ;
-        document.querySelectorAll('.bullet-single')[index]
-        .classList.add('active-bullet');
-
-        lastImage.style.opacity = 0;
-        actualImage.style.opacity = 1;
-
-        lastIndex = index;
-        
-    })
-})
-</script>
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
 
 </html>

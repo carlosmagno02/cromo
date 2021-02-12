@@ -127,7 +127,7 @@ header{
     background-image: url(../img/Funcionario\ Senai.png);
 }
 .terceiro-banner{
-    background-image: url(../img/Grupo\ Cromo.png);
+    background-image: url(../img/Cursos\ Senai.png);
 }
 
 .texto-banner{
@@ -159,15 +159,15 @@ header{
 }
 
 .img-projeto img{
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 144px;
 }
 
 .texto-projeto{
     margin-top: 50px;
     width:55%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .texto-projeto h2{
@@ -208,7 +208,7 @@ header{
 .cromo p{
     padding-top: 20px;
     font-family: 'Comfortaa', cursive;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* footer */
@@ -250,7 +250,7 @@ footer p{
 
     .img-projeto img{
         width: 300px;
-        height: 150px;
+        height: 80px;
     }
 
     .texto-projeto{
