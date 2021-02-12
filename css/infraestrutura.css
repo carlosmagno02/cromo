@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500&display=swap');
+
 *{
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -150,14 +151,22 @@ footer p{
     .galeria-img > .img-pequena{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+    }
+    .galeria-img img{
+        margin: 15px auto;
+        width: 250px;
+        height: 180px;
     }
 
     .galeria{
+        width: 100%;
         height: auto;
     }
 
     footer p{
-        font-size: 10px;
+        text-align: center;
+        font-size: 5px;
     }
 
     .img-pequena img:nth-child(3){display: none;}
