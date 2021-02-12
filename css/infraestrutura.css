@@ -163,6 +163,10 @@ footer p{
         width: 100%;
         height: auto;
     }
+    .banner{
+        height: 60vh;
+    }
+    
 
     footer p{
         text-align: center;
