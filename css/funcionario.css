@@ -68,7 +68,7 @@ h1{
 
 
 .galeria-img{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     height: 100%;
@@ -98,4 +98,42 @@ footer p{
     justify-content: center;
     font-family: 'Comfortaa', cursive;
     font-size: 18px;
+}
+
+@media screen and (max-width:700px){
+    h1{
+        font-size: 40px;
+    }
+
+    .galeria-img > .img-pequena{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .galeria-img img{
+        margin: 15px auto;
+        width: 250px;
+        height: 180px;
+    }
+
+    .galeria{
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel{
+        margin: auto;
+        padding-top:50%;
+    }
+    
+    .banner{
+        height: 50vh;
+    }
+
+    .img-pequena img:nth-child(4){display: none;}
+    .imagem-grande{
+        display: none;
+        margin-right:0;
+        height: 617px!important;
+    }
 }

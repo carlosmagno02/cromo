@@ -1,8 +1,9 @@
 header{
     height: 100px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar{
@@ -14,22 +15,33 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.navbar{
+    font-family: 'Comfortaa', cursive;
+    max-width:500px ;
+    margin:0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    padding-top: 0px;
+}
 
-.dropdown{
+.dropdowns{
     cursor: pointer;
     color: white;
 }
 
-.dropdown-menu{
+.dropdowns-menu{
+    width: 70px;
     display: none;
     list-style: none;
 }
 
-.dropdown-menu li{
-    display: block;
+.dropdowns-menu li{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-.dropdown-menu a{
+.dropdowns-menu a{
     display: block;
     color: white;
     text-decoration: none;

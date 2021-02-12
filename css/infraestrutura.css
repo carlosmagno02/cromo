@@ -164,16 +164,23 @@ footer p{
         height: auto;
     }
     .banner{
-        height: 60vh;
+        height: 50vh;
+    }
+    .carousel{
+        padding-top:50%;
+    }
+    .carousel-inner{
+        border-radius: 15px;
     }
     
 
     footer p{
         text-align: center;
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .img-pequena img:nth-child(3){display: none;}
     .img-pequena img:nth-child(4){display: none;}
     .img-pequena img:nth-child(5){display: none;}
 }
+

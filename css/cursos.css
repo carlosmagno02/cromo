@@ -125,7 +125,7 @@ footer p{
     font-size: 18px;
 }
 @media screen and (max-width:700px){
-    .infraestrutura h1{
+    .cursos h1{
         font-size: 36px;
     }
 
@@ -145,10 +145,21 @@ footer p{
     .container img{
         height:50%;
     }
-
+    .carousel{
+        padding-top:50%;
+    }
     .galeria-img > .img-pequena{
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+    }
+    .galeria-img img{
+        margin: 15px auto;
+        width: 250px;
+        height: 180px;
+    }
+    .banner{
+        height: 50vh;
     }
 
     .galeria{
