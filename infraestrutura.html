@@ -44,21 +44,67 @@
     <!-- Fim Infraestrutura -->
 
     <!-- Mosaico -->
-    <section id="mosaico" clas="mosaico">
+    <section id="mosaico" class="mosaico">
         <div class="mosaico-imagens">
-            <div class="imagem-grande">
-                <img src="" alt="">
+
+            <!-- Imagens grandes com numeracao -->
+            <div class="slide">
+                <div class="numeracao">1 / 6</div>
+                    <img src="img/11.png" alt="Sala 1">
             </div>
-            <div class="bullets">
-                <div class="bullet active"></div>
-                <div class="bullet"></div>
-                <div class="bullet"></div>
+            <div class="slide">
+                <div class="numeracao">2 / 6</div>
+                    <img src="img/12.png" alt="Sala 2">
             </div>
-            <div class="selecao-imagens">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="slide">
+                <div class="numeracao">3 / 6</div>
+                    <img src="img/13.png" alt="Aula 1">
             </div>
+            <div class="slide">
+                <div class="numeracao">4 / 6</div>
+                    <img src="img/14.png" alt="Sala 1">
+            </div>
+            <div class="slide">
+                <div class="numeracao">5 / 6</div>
+                    <img src="img/15.png" alt="Sala 2">
+            </div>
+            <div class="slide">
+                <div class="numeracao">6 / 6</div>
+                    <img src="img/17.png" alt="Aula 1">
+            </div>
+            <!-- Fim imagens grandes com numeracao -->
+
+            <!-- botoes avancar e voltar -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+            <!-- botoes avancar e voltar -->
+
+            <div class="container-captacao">
+                <p id="captacao"></p>
+            </div>
+
+            <!-- linha de imagens -->
+            <div class="linhaa">
+                <div class="coluna">
+                    <img class="demo cursor" src="img/11.png" style="width: 100%;" onclick="currentSlide(1)" alt="Redes">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/12.png" style="width: 100%;" onclick="currentSlide(2)" alt="CyberCeguranca">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/13.png" style="width: 100%;" onclick="currentSlide(3)" alt="Sala de aula">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/14.png" style="width: 100%;" onclick="currentSlide(4)" alt="Sala de reuniao">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/15.png" style="width: 100%;" onclick="currentSlide(5)" alt="Refeitorio">
+                </div>
+                <div class="coluna">
+                    <img class="demo cursor" src="img/17.png" style="width: 100%;" onclick="currentSlide(6)" alt="Sala de manutencao de hardware">
+                </div>
+            </div>
+            <!-- fim linha de imagens -->
         </div>
     </section>
     <!-- Fim mosaico -->
@@ -71,6 +117,7 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
+<script src="js/galeria.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

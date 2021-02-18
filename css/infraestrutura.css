@@ -45,6 +45,7 @@ html,body{
 /* Fim infraestrutura */
 
 /* Mosaico */
+.mosaico{height: 120%}
 .mosaico-imagens{
     margin: auto;
     height: 80%;
@@ -56,53 +57,82 @@ html,body{
     top: 50%;
     transform: translateY(-50%);
 }
-.imagem-grande{
-    width: 100%;
-    height: 65%;
-    border: 1px solid;
-    margin: auto;
+
+.slide{
+    display: none;
 }
 
-.bullets{
-    padding: 5% 0;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+.slide img{
+    width: 828px;
+    height: 540px;
 }
 
-.bullet{
-    background-color: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    margin-right: 50px;
-}
-
-.active{
-    background-color: #513F88;
-}
-
-.bullet:hover{
+.cursor{
     cursor: pointer;
-    background-color: rgb(101, 91, 131);
 }
 
-.bullet:last-child{
-    margin-right: 0;
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
-.selecao-imagens{
-    display: flex;
-    justify-content: space-between;
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.selecao-imagens img{
-    height: 207px;
-    width: 266px;
+.prev:hover,.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: white;
 }
 
+
+
+.numeracao{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.container-captacao{
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.linha::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.coluna{
+    float: left;
+    width: 33.33%;
+}
+
+.demo{
+    opacity: 0.6;
+}
+
+.active,.demo:hover{
+    opacity: 1;
+}
 
 footer{
     height: 30px;
@@ -172,5 +202,12 @@ footer p{
     .img-pequena img:nth-child(3){display: none;}
     .img-pequena img:nth-child(4){display: none;}
     .img-pequena img:nth-child(5){display: none;}
+}
+
+@media screen and (max-width:1440px){
+    .mosaico{height: 130%;}
+}
+@media screen and (max-width:1366px){
+    .mosaico{height: 160%;}
 }
 
