@@ -12,35 +12,27 @@
 </head>
 
 <body>
+    <!-- Cabecalho -->
     <header>
         <nav class="navbar">
-            <div class="menu-galeria">
-                <p class="dropdowns">GALERIA</p>
-                <ul class="dropdowns-menu">
-                    <li><a href="infraestrutura.html">Infraestrutura</a></li>
-                    <li><a href="funcionario.html">Funcionarios</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                </ul>
-            </div>
-            <div class="logotipo">
-                <img src="./img/logo-maneira.png" alt="logotipo chromo">
-            </div>
-            <div class="menu-sobre">
-                <p class="dropdowns">SOBRE</p>
-                <ul class="dropdowns-menu">
-                    <li>
-                        <a href="#projeto">Projeto</a>
-                        <a href="#cromo">A Cromo</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="menu-list">
+                <li><a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a></li>
+                <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="funcionario.html">Funcionários</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+            </ul>
         </nav>
     </header>
+    <!-- Fim cabecalho -->
+    <!-- Secao inicio -->
     <section class="inicio">
         <img src="img/Logo CROMO.svg" alt="">
     </section>
+    <!-- Fim secao inicio -->
     <div class="divisao"></div>
+    <!-- Secao guia-paginas -->
     <section style="width: 100%;" class="guia-paginas">
+        <!-- SLIDER com BOOTSTRAP -->
         <div style="width: 100%;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -77,8 +69,11 @@
                 </div>
             </div>
         </div>
+        <!-- Fim do SLIDER -->
     </section>
+    <!-- Fim secao guia-paginas -->
     <div class="divisao"></div>
+    <!-- Secao projeto -->
     <section id="projeto" class="projeto">
         <div class="container">
             <div class="texto-projeto">
@@ -97,7 +92,9 @@
             </div>
         </div>
     </section>
+    <!-- Fim secao projeto -->
     <div class="divisao"></div>
+    <!-- Secao cromo -->
     <section id="cromo" style="position: relative;">
         <div class="cromo container">
             <h2>A Cromo</h2>
@@ -110,10 +107,15 @@
             </p>
         </div>
     </section>
+    <!-- Fim secao cromo -->
+    <!-- Rodape -->
     <footer>
         <p>TODOS OS DIREITOS RESERVADOS © CROMO 2021</p>
     </footer>
+    <!-- Fim Rodape -->
 </body>
+
+<!-- Scripts JavaScript e Bootstrap -->
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

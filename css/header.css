@@ -1,43 +1,45 @@
+/* Cabecalho */
 header{
     height: 100px;
     position: fixed;
     width: 100%;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.3);
-}
+    background: linear-gradient(180deg, rgba(81, 63, 136, 0.5) 0%, rgba(234, 69, 91, 0.25) 100%);}
 
 .navbar{
     font-family: 'Comfortaa', cursive;
     height: 100%;
-    max-width:500px ;
+    max-width:1200px ;
     margin: auto;
+}
+
+.nav-img{
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.dropdowns{
-    cursor: pointer;
-    color: white;
-}
-
-.dropdowns-menu{
-    position: fixed;
-    top:50px;
-    width: 70px;
-    display: none;
-    list-style: none;
-}
-
-.dropdowns-menu li{
-    padding: 0;
-    font-size: 13px;
+.menu-list{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase;
+    height: 100%;
+    align-items: center;
 }
 
-.dropdowns-menu a{
-    display: block;
+.menu-list a{
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 15%;
     color: white;
     text-decoration: none;
 }
+.menu-list li:hover{
+    transition: 0.1s;
+    transform: scale(1.2);
+}
+/*Fim Cabecalho */
