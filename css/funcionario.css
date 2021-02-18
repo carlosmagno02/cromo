@@ -1,91 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html,body,section{
-    height: 100%;
     background: #EA455B;
-
 }
 
-.divisao{
-    width: 100%;
-    height: 15px;
-    background: white;
-}
-
-#title{
-    background-image: url(../img/Funcionario\ Senai.png);
+/* Funcionarios */
+.funcionarios{
+    background-image: url(../img/Infraestrutura\ Senai.png);
+    height: 100%;
     background-position: center;
     background-size: cover;
 }
 
-.title{
-    font-family: Montserrat;
+.texto-funcionarios{
+    color: white;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+.texto-funcionarios h1{
+    margin-right:auto ;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 48px;
+    padding-bottom: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-funcionarios p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167%;
+}
+
+.seta-baixo{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* funcioanrios */
+
+/* Mosaico */
+.mosaico-imagens{
+    margin: auto;
+    height: 80%;
+    max-width: 828px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.imagem-grande{
+    width: 100%;
+    height: 65%;
+    border: 1px solid;
+    margin: auto;
+}
+
+.bullets{
+    padding: 5% 0;
+    width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
 }
 
-h1{
-    
-    text-transform: uppercase;
-    font-size: 96px;
+.bullet{
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: 50px;
 }
 
-/* Slider */
-.carousel{
-    margin: auto;
-    padding-top:2.5%;
+.active{
+    background-color: #3097C9;
 }
 
-.banner{
-    width: 100%;
-    height: 90vh;
-    background-position: center;
-    background-size: cover;
+.bullet:hover{
+    cursor: pointer;
+    background-color: rgb(149, 217, 252);
 }
 
-
-.primeiro-banner{
-    background-image: url(../img/IMG_1136.JPG);
+.bullet:last-child{
+    margin-right: 0;
 }
 
-
-.segundo-banner{
-    background-image: url(../img/IMG_1197.JPG);
-}
-.terceiro-banner{
-    background-image: url(../img/IMG_1837.JPG);
-}
-/* Fim Slider */
-
-
-.galeria-img{
-    max-width: 1200px;
-    margin: auto;
+.selecao-imagens{
     display: flex;
-    height: 100%;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.galeria-img img{
-    margin-top: 15px;
-    margin-right: 5px;
-    width: 386px;
-    height: 300px;
+.selecao-imagens img{
+    height: 207px;
+    width: 266px;
 }
+/* mosaico */
 
-.img-grande{
-    margin-right:0;
-    height: 617px!important;
-}
 
 footer{
     height: 30px;

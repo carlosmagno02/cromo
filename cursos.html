@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cursos.css">
@@ -13,86 +14,52 @@
 </head>
 
 <body>
+    <!-- Cabecalho -->
     <header>
         <nav class="navbar">
-            <div class="menu-galeria">
-                <p class="dropdowns">Galeria</p>
-                <ul class="dropdowns-menu">
-                    <li><a href="infraestrutura.html">Infraestrutura</a></li>
-                    <li><a href="funcionario.html">Funcionarios</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                </ul>
-            </div>
-            <div class="logotipo">
-                <a href="index.html"><img src="./img/logo-maneira.png" alt="logotipo chromo"></a>
-            </div>
-            <div class="menu-sobre">
-                <p class="dropdowns">Sobre</p>
-                <ul class="dropdowns-menu">
-                    <li>
-                        <a href="index.html#projeto">Projeto</a>
-                        <a href="index.html#cromo">A Cromo</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="menu-list">
+                <li><a href="index.html"><img src="./img/logo-maneira.png" alt="Logo Cromo"></a></li>
+                <li><a href="infraestrutura.html">Infraestrutura</a></li>
+                <li><a href="funcionario.html">Funcionários</a></li>
+                <li><a style="text-decoration: underline white;" href="cursos.html">Cursos</a></li>
+            </ul>
         </nav>
     </header>
+    <!-- Fim cabecalho -->
     <section class="cursos">
-        <div>
+        <div class="texto-cursos">
             <h1>Cursos</h1>
+            <p>A trindade do Senai Informática; os cursos técnicos da escola, escolha aquele no qual se sentir mais
+                conectado, sendo eles: Desenvolvimento de Sistemas, Redes de Computadores e Multimídia; e aproveite a
+                infraestrutura própria e personalizada destinada ao curso. Mas calma lá, não é só isso, há também os
+                cursos FIC (Formação Inicial e Continuada) que são livres e breves para uma formação rápida voltada a
+                uma especificidade do mercado de trabalho.</p>
         </div>
-    </section>
-    <div class="divisao"></div>
-    <section clas="infra-carossel">
-        <div style="width: 80%;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div style="width: 100%;" class="carousel-inner">
-                <div style="width: 100%; position: relative;" class="carousel-item active">
-                    <div style="width: 100%;" class="banner primeiro-banner">
-                        <div style="width: 80%;" class="container-grid conteudo-banner">
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 100%;" class="carousel-item">
-                    <div style="width: 100%; position: relative;" class="banner segundo-banner">
-                        <div style="width: 80%;" class="container-grid conteudo-banner">
-                        </div>
-                    </div>
-                </div>
-                <div style="width: 100%;" class="carousel-item">
-                    <div style="width: 100%; position: relative;" class="banner terceiro-banner">
-                        <div style="width: 80%;" class="container-grid conteudo-banner">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+        <div class="seta-baixo">
+            <a href="#mosaico">
+                <img src="./img/DownArrow.svg" alt="">
             </a>
         </div>
     </section>
-    <div class="divisao"></div>
-    <section class="galeria">
-        <div class="galeria-img">
-            <div class="img-pequena">
-                <img src="img/IMG_2464.JPG" alt="">
-                <img src="img/IMG_2456.JPG" alt="">
-                <img src="img/IMG_1468.JPG" alt="">
-                <img src="img/IMG_0267.JPG" alt="">
-                <img src="img/IMG_1315.JPG" alt="">
-                <img src="img/IMG_0932.JPG" alt="">
+    <!-- Mosaico -->
+    <section id="mosaico" clas="mosaico">
+        <div class="mosaico-imagens">
+            <div class="imagem-grande">
+                <img src="" alt="">
+            </div>
+            <div class="bullets">
+                <div class="bullet active"></div>
+                <div class="bullet"></div>
+                <div class="bullet"></div>
+            </div>
+            <div class="selecao-imagens">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </div>
         </div>
     </section>
+    <!-- Fim mosaico -->
     <footer>
         <p>TODOS OS DIREITOS RESERVADOS © CROMO 2021</p>
     </footer>

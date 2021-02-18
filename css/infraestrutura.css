@@ -1,19 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500&display=swap');
-
-/* padroes da pagina */
-*{
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
 html,body{
-    height: 100%;
     background-color: #3097C9;;
-}
-
-section{
-    height: 100%;
 }
 
 /* Infraestrutura */
@@ -35,7 +21,7 @@ section{
     margin: auto;
     flex-direction: column;
 }
-.infraestrutura h1{
+.texto-infraestrutura h1{
     margin-right:auto ;
     font-weight: 500;
     text-transform: uppercase;
@@ -44,10 +30,17 @@ section{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.infraestrutura p{
+.texto-infraestrutura p{
     font-size: 18px;
     font-weight: 400;
     line-height: 167%;
+}
+
+.seta-baixo{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /* Fim infraestrutura */
 
@@ -59,6 +52,9 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .imagem-grande{
     width: 100%;
@@ -68,6 +64,7 @@ section{
 }
 
 .bullets{
+    padding: 5% 0;
     width: 100%;
     margin: auto;
     display: flex;
@@ -75,11 +72,21 @@ section{
 }
 
 .bullet{
-    background-color: #513F88;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 25px;
     height: 25px;
     border-radius: 100%;
     margin-right: 50px;
+}
+
+.active{
+    background-color: #513F88;
+}
+
+.bullet:hover{
+    cursor: pointer;
+    background-color: rgb(101, 91, 131);
 }
 
 .bullet:last-child{
