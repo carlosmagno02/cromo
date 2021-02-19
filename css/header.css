@@ -29,7 +29,10 @@ header{
     position: fixed;
     width: 100%;
     z-index: 999;
-    background: linear-gradient(180deg, rgba(81, 63, 136, 0.5) 0%, rgba(234, 69, 91, 0.25) 100%);}
+    background: linear-gradient(180deg, rgba(81, 63, 136, 0.5) 0%, rgba(234, 69, 91, 0.25) 100%);
+}
+
+.navbar-mobile{display: none;}
 
 .navbar{
     font-family: 'Comfortaa', cursive;
