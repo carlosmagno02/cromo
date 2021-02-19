@@ -180,7 +180,7 @@ footer p{
     
     /* sobre */
     .cromo{
-        width: 90%;
+        width: 80% !important;
     }
 
     .cromo h2{
