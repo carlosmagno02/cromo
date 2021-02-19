@@ -156,23 +156,6 @@ footer p{
     font-size: 12px;
 }
 @media screen and (max-width:360px){
-    .navbar{display: none}
-    
-    .navbar-mobile{
-        display: flex !important;
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .menu-list{
-        justify-content: space-between !important;
-    }
-
-    .menu-list a{
-        font-size: 13px !important;
-    }
     .texto-infraestrutura{width: 80%;}
     .texto-infraestrutura h1{font-size: 24px;}
     .texto-infraestrutura p{font-size: 12px;}
