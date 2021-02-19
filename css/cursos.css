@@ -100,7 +100,7 @@ html,body{
 }
 
 .numeracao{
-    color: #00aaff;
+    color: #513F88;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -156,52 +156,35 @@ footer p{
     font-size: 12px;
 }
 @media screen and (max-width:700px){
-    .cursos h1{
-        font-size: 36px;
+    .texto-cursos{width: 80%;}
+    .texto-cursos h1{font-size: 24px;}
+    .texto-cursos p{font-size: 12px;}
+
+    .mosaico{
+        height: 100%;
+    }
+    .mosaico-imagens{
+        width: 80%;
     }
 
-    .infra-imgs div{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .infra-imgs img{
-        width: 300px;
-        height: 250px;
-    }
-    .container{
-    height:80%
+    .prev,.next{
+        margin-top: -60px;
     }
 
-    .container img{
-        height:50%;
-    }
-    .carousel{
-        padding-top:50%;
-    }
-    .galeria-img > .img-pequena{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .galeria-img img{
-        margin: 15px auto;
-        width: 250px;
-        height: 180px;
-    }
-    .banner{
-        height: 50vh;
+    .container-captacao p{
+        font-size: 12px;
     }
 
-    .galeria{
-        height: auto;
+    .slide img{
+        height: 30vh;
+    }
+
+    .coluna{
+        width: 33.33%;
     }
 
     footer p{
+        text-align: center;
         font-size: 10px;
     }
-
-    .img-pequena img:nth-child(3){display: none;}
-    .img-pequena img:nth-child(4){display: none;}
-    .img-pequena img:nth-child(5){display: none;}
 }

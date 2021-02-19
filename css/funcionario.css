@@ -1,4 +1,4 @@
-html,body,section{
+html,body{
     background: #EA455B;
 }
 
@@ -101,7 +101,7 @@ html,body,section{
 }
 
 .numeracao{
-    color: #00aaff;
+    color: #EA455B;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
@@ -158,40 +158,36 @@ footer p{
     font-size: 12px;
 }
 
-@media screen and (max-width:700px){
-    h1{
-        font-size: 40px;
+@media screen and (max-width:360px){
+    .texto-funcionarios{width: 80%;}
+    .texto-funcionarios h1{font-size: 24px;}
+    .texto-funcionarios p{font-size: 12px;}
+
+    .mosaico{
+        height: 100%;
+    }
+    .mosaico-imagens{
+        width: 80%;
     }
 
-    .galeria-img > .img-pequena{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .galeria-img img{
-        margin: 15px auto;
-        width: 250px;
-        height: 180px;
+    .prev,.next{
+        margin-top: -60px;
     }
 
-    .galeria{
-        width: 100%;
-        height: auto;
+    .container-captacao p{
+        font-size: 12px;
     }
 
-    .carousel{
-        margin: auto;
-        padding-top:50%;
-    }
-    
-    .banner{
-        height: 50vh;
+    .slide img{
+        height: 30vh;
     }
 
-    .img-pequena img:nth-child(4){display: none;}
-    .imagem-grande{
-        display: none;
-        margin-right:0;
-        height: 617px!important;
+    .coluna{
+        width: 33.33%;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 10px;
     }
 }
