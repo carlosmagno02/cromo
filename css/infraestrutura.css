@@ -165,12 +165,7 @@ footer p{
         justify-content: space-between;
         align-items: center;
     }
-
-    .texto-infraestrutura{width: 80%;}
-    .texto-infraestrutura h1{font-size: 24px;}
-    .texto-infraestrutura p{font-size: 12px;}
-
-
+    
     .menu-list{
         justify-content: space-between !important;
     }
@@ -178,6 +173,11 @@ footer p{
     .menu-list a{
         font-size: 13px !important;
     }
+    .texto-infraestrutura{width: 80%;}
+    .texto-infraestrutura h1{font-size: 24px;}
+    .texto-infraestrutura p{font-size: 12px;}
+
+
 
     .mosaico{
         height: 100%;
