@@ -70,7 +70,7 @@
     color: white;
 }
 
-.projeto > .container{
+.projeto > .container-flex{
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -159,6 +159,9 @@ footer p{
     .img-projeto img{
         width: 300px;
         height: 80px;
+    }
+    .texto-banner{
+        font-size: 26px;
     }
 
     .texto-projeto{
