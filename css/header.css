@@ -13,7 +13,7 @@ html,body,section{
     height: 100%;
 }
     
-.container{
+.container-flex{
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -136,7 +136,7 @@ header{
         outline: green;
     }
 
-    .projeto > .container{
+    .projeto > .container-flex{
         height: 100%;
         display: flex;
         flex-direction: column;
