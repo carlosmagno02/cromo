@@ -148,29 +148,13 @@ footer p{
 
 @media screen and (max-width:700px){
     /* nav-bar */
-    .navbar{
-        height: 100%;
-        max-width:300px;
-        padding: 0 2%;
-    }
-    
-    /* banner */
-    .texto-banner{
-        font-size: 26px;
-    }
+
     /* inicio */
     .inicio img{
         width: 270px;
         height: 98px;
     }
     /* Projeto */
-    .projeto > .container{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
 
     .img-projeto img{
         width: 300px;

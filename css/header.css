@@ -135,5 +135,14 @@ header{
     .dropdown:active{
         outline: green;
     }
+
+    .projeto > .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }
 /*Fim Cabecalho */
